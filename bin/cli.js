@@ -16,7 +16,9 @@ program
     .description(packageJson.description)
     .version(packageJson.version, '-v, --version', 'Display Mogra version')
     .argument('<file>', 'Path to the file')
-    .action(file => {
+    .option('--port <number>', 'run the server on this port', 2577)
+    .option('--debug', 'enable debug mode', false)
+    .action((file, options) => {
         const filePath = path.resolve(file);
 
         if (!fs.existsSync(filePath)) {
@@ -25,7 +27,7 @@ program
         }
 
         const morganCode = fs.readFileSync(filePath, 'utf-8');
-        parse(morganCode);
+        parse(morganCode, options.port, options.debug);
     })
 
 
