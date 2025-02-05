@@ -1,5 +1,5 @@
-const slashRout = (req, res)=>{
-    res.send('');
+const slashRout = (html)=>(req, res)=>{
+    res.send(html);
 }
 
 export { slashRout };
