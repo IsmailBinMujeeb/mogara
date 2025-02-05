@@ -12,7 +12,8 @@
       "prefer-arrow-callback": "warn",
       "no-var": "error",
       "semi": ["error", "always"],
-      "quotes": ["error", "single"] 
+      "quotes": ["error", "single"],
+      "no-undef": "warn"
     }
   }
   
