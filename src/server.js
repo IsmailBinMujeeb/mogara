@@ -17,7 +17,7 @@ const server = (html, onPORT, isDebugMod) => {
     logger.level = isDebugMod ? 'debug' : 'warn';
     app.get('/', slashRout(html));
     app.listen(PORT, ()=>{
-        logger.debug(`Running at http://127.0.0.1${PORT}`);
+        logger.debug(`Running at http://127.0.0.1:${PORT}`);
     });
 }
 
