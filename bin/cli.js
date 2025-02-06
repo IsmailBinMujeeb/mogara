@@ -16,7 +16,7 @@ program
     .description(packageJson.description)
     .version(packageJson.version, '-v, --version', 'Display Mogra version')
     .argument('<file>', 'Path to the file')
-    .option('--port <number>', 'run the server on this port', 2577)
+    .option('--port <port>', 'run the server on this port', 2577)
     .option('--debug', 'enable debug mode', false)
     .action((file, options) => {
         const filePath = path.resolve(file);
