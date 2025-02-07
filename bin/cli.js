@@ -4,6 +4,7 @@ import { Command } from "commander";
 import { createRequire } from 'module';
 import logger from "../src/config/logger-config.js";
 import parse from "../lib/parser.js";
+import server from "../src/server.js"
 import fs from 'fs';
 import path from 'path';
 
@@ -29,7 +30,8 @@ program
         }
 
         const morganCode = fs.readFileSync(filePath, 'utf-8');
-        parse(morganCode, options.port, options.debug);
+        const html = parse(morganCode, filePath);
+        server(html, options.port, options.debug, filePath);
     })
 
 
