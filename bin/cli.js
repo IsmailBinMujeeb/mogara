@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 import { Command } from "commander";
 import { createRequire } from 'module';
 import logger from "../src/config/logger-config.js";

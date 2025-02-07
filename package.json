@@ -2,8 +2,10 @@
   "name": "mogara",
   "version": "0.1.0",
   "description": "",
-  "main": "src/index.js",
   "type": "module",
+  "bin": {
+    "mogara": "./bin/cli.js"
+  },
   "scripts": {
     "lint": "eslint src/index.js",
     "lint:fix": "eslint src/index.js --fix"
