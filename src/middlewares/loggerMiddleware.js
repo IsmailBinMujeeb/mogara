@@ -1,6 +1,7 @@
-import logger from "../config/logger-config.js";
-import morgan from "morgan";
+/*eslint no-undef: "off"*/
 
+const logger = require("../config/logger-config.js");
+const morgan = require("morgan");
 const morganFormat = ":method :url :status :response-time ms";
 
 const morganLogger = morgan(morganFormat, {
@@ -12,4 +13,4 @@ const morganLogger = morgan(morganFormat, {
     },
 })
 
-export default morganLogger;
+module.exports = morganLogger;

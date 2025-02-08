@@ -2,7 +2,7 @@
   "name": "mogara",
   "version": "1.0.0",
   "description": "",
-  "type": "module",
+  "type": "commonjs",
   "bin": {
     "mogara": "./bin/cli.js"
   },
@@ -22,7 +22,16 @@
     "express": "^4.21.2",
     "morgan": "^1.10.0",
     "open": "^10.1.0",
+    "opn": "^6.0.0",
     "socket.io": "^4.8.1",
     "winston": "^3.17.0"
+  },
+  "pkg": {
+    "targets": [
+      "node18-linux-x64",
+      "node18-win-x64",
+      "node18-macos-x64"
+    ],
+    "outputPath": "dist"
   }
 }

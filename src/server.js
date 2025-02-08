@@ -1,14 +1,16 @@
-import express from 'express';
-import morganLogger from './middlewares/loggerMiddleware.js';
-import fs from "fs";
-import chokidar from 'chokidar'
-import open from 'open';
-import { Server } from "socket.io";
-import http from "http";
+/*eslint no-undef: "off"*/
 
-import { slashRout } from './controllers/routesController.js';
-import logger from './config/logger-config.js';
-import parse from '../lib/parser.js';
+const express = require('express');
+const morganLogger = require('./middlewares/loggerMiddleware.js');
+const fs = require("fs");
+const chokidar = require('chokidar');
+const opn = require('opn')
+const { Server } = require("socket.io");
+const http = require("http");
+
+const { slashRout } = require('./controllers/routesController.js');
+const logger = require('./config/logger-config.js');
+const parse = require('../lib/parser.js');
 
 const app = express();
 
@@ -26,10 +28,10 @@ const expressServer = (html, onPORT, isDebugMod, filePath) => {
     logger.level = isDebugMod ? 'debug' : 'warn';
     app.get('/', slashRout(html));
 
-    server.listen(PORT, () => {
+    server.listen(PORT, async () => {
         logger.debug(`Running at http://127.0.0.1:${PORT}`);
 
-        open(`http://127.0.0.1:${PORT}`);
+        opn(`http://127.0.0.1:${PORT}`);
     });
 
     io.on('connection', () => {
@@ -42,4 +44,4 @@ const expressServer = (html, onPORT, isDebugMod, filePath) => {
 }
 
 
-export default expressServer;
+module.exports = expressServer;

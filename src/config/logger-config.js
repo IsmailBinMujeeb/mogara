@@ -1,4 +1,6 @@
-import { createLogger, format, transports } from "winston";
+/*eslint no-undef: "off"*/
+const { createLogger, format, transports } = require("winston");
+
 const { combine, timestamp, json, colorize } = format;
 
 const logFormate = format.combine(
@@ -19,4 +21,4 @@ const logger = createLogger({
     ]
 });
 
-export default logger;
+module.exports = logger;

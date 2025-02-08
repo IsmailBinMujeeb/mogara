@@ -1,15 +1,13 @@
 #!/usr/bin/env node
 
-import { Command } from "commander";
-import { createRequire } from 'module';
-import logger from "../src/config/logger-config.js";
-import parse from "../lib/parser.js";
-import server from "../src/server.js"
-import fs from 'fs';
-import path from 'path';
-
 /* eslint-disable no-undef */
-const require = createRequire(import.meta.url);
+const { Command } = require("commander");
+const logger = require("../src/config/logger-config.js");
+const parse = require("../lib/parser.js");
+const server = require("../src/server.js");
+const fs = require('fs');
+const path = require('path');
+
 const packageJson = require('../package.json');
 
 const program = new Command();

@@ -1,7 +1,8 @@
 {
   "env": {
     "node": true,
-    "es6": true
+    "es6": false,
+    "commonjs": true
   },
   "extends": "eslint:recommended",
   "rules": {
@@ -13,7 +14,6 @@
     ],
     "camelcase": "warn",
     "prefer-arrow-callback": "warn",
-    "no-var": "error",
     "semi": [
       "error",
       "always"
