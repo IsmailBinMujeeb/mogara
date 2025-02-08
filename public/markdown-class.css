@@ -1,0 +1,74 @@
+.markdown-class {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+    line-height: 1.6;
+    color: #fff;
+    background-color: #24292e;
+    margin: 40px auto;
+    max-width: 95vw;
+}
+
+.markdown-class h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+    margin-top: 24px;
+    margin-bottom: 8px;
+    line-height: 1.25;
+}
+
+.markdown-class h1 { font-size: 2em; border-bottom: 1px solid #eaecef; padding-bottom: 0.3em; }
+.markdown-class h2 { font-size: 1.5em; border-bottom: 1px solid #eaecef; padding-bottom: 0.3em; }
+.markdown-class h3 { font-size: 1.25em; }
+.markdown-class h4 { font-size: 1em; }
+.markdown-class h5 { font-size: 0.875em; }
+.markdown-class h6 { font-size: 0.85em; color: #6a737d; }
+
+.markdown-class p {
+    margin-bottom: 16px;
+}
+
+.markdown-class code {
+    font-family: SFMono-Regular, Consolas, "Liberation Mono", Menlo, Courier, monospace;
+    background-color: rgba(0, 128, 255, 0.258);
+    padding: 0.2em 0.4em;
+    border-radius: 6px;
+    font-size: 85%;
+}
+
+.markdown-class pre {
+    background-color: rgba(0, 128, 255, 0.247);
+    padding: 16px;
+    border-radius: 6px;
+    overflow: auto;
+}
+
+.markdown-class pre code {
+    /* background-color: transparent; */
+    padding: 0;
+}
+
+.markdown-class ul, ol {
+    padding-left: 2em;
+    margin-bottom: 16px;
+}
+
+.markdown-class blockquote {
+    padding: 0 1em;
+    color: #6a737d;
+    border-left: 0.25em solid #dfe2e5;
+    margin: 0;
+}
+
+.markdown-class a {
+    color: #0366d6;
+    text-decoration: none;
+}
+
+.markdown-class a:hover {
+    text-decoration: underline;
+}
+
+.markdown-class hr {
+    border: 0;
+    height: 1px;
+    background: #e1e4e8;
+    margin: 24px 0;
+}

@@ -27,7 +27,9 @@
     "winston": "^3.17.0"
   },
   "pkg": {
-    "targets": ["node18-win-x64"],
+    "targets": [
+      "node18-win-x64"
+    ],
     "outputPath": "dist"
   }
 }
