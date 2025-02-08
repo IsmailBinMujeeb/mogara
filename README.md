@@ -35,11 +35,4 @@ function foo(a, b){
 ` <js foo(10, 5) > `
 
 ```
-
-## License
-
-**The MIT License (MIT)**
-
-Copyright © 2019 Yago
-
 ___
