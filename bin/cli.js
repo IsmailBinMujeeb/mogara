@@ -19,6 +19,7 @@ program
     .argument('<file>', 'Path to the file')
     .option('--port <port>', 'run the server on this port', 2577)
     .option('--debug', 'enable debug mode', false)
+    .option('--expose', 'Convert the .mg code to .html', false)
     .action((file, options) => {
         const filePath = path.resolve(file);
 
@@ -29,7 +30,15 @@ program
 
         const morganCode = fs.readFileSync(filePath, 'utf-8');
         const html = parse(morganCode, filePath);
-        server(html, options.port, options.debug, filePath);
+
+        if (!options.expose) server(html, options.port, options.debug, filePath);
+        else {
+            const pathToHtml = filePath.replace('.mg', '.html');
+            console.log(pathToHtml)
+            fs.writeFile(pathToHtml, html, (err)=>{
+                if (err) logger.error(err.message);
+            })
+        }
     })
 
 
