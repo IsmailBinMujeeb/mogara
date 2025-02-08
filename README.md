@@ -1,7 +1,7 @@
 ___
 
 <div align="center">
-<img align="center" src="./assests/mg.ico" width="200px"/>
+<img align="center" src="https://github.com/IsmailBinMujeeb/mogara/blob/main/assets/mg.ico" width="200px"/>
 
 [![npm package](https://img.shields.io/npm/v/mogara?logo=npm&style=social)](https://www.npmjs.org/package/mogara) ![NPM Downloads by package author](https://img.shields.io/npm-stat/dw/ismailbinmujeeb?style=social&logo=npm)
 
