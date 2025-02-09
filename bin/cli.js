@@ -28,13 +28,13 @@ program
             process.exit(1);
         }
 
-        const morganCode = fs.readFileSync(filePath, 'utf-8');
-        const html = parse(morganCode, filePath);
+        const mogaraCode = fs.readFileSync(filePath, 'utf-8');
+        const html = parse(mogaraCode, filePath);
 
         if (!options.expose) server(html, options.port, options.debug, filePath);
         else {
             const pathToHtml = filePath.replace('.mg', '.html');
-            console.log(pathToHtml)
+            
             fs.writeFile(pathToHtml, html, (err)=>{
                 if (err) logger.error(err.message);
             })
