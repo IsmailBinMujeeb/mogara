@@ -29,7 +29,7 @@ program
         }
 
         const mogaraCode = fs.readFileSync(filePath, 'utf-8');
-        const html = parse(mogaraCode, filePath);
+        const html = parse(mogaraCode);
 
         if (!options.expose) server(html, options.port, options.debug, filePath);
         else {
