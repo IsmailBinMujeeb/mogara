@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      line-height: 1.8;
+      background-color: #f9f9f9;
+      color: #222;
+      padding: 2rem;
+      /* max-width: 900px; */
+      /* margin: auto; */
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      color: #0077b6;
+      margin-bottom: 1rem;
+    }
+
+    h2 {
+      font-size: 2rem;
+      color: #005b8e;
+      margin-top: 1.5rem;
+    }
+
+    h3 {
+      font-size: 1.5rem;
+      color: #004066;
+      margin-top: 1.2rem;
+    }
+
+    h4,
+    h5,
+    h6 {
+      color: #00324d;
+      margin-top: 1rem;
+    }
+
+    p {
+      color: #333;
+      margin-bottom: 1rem;
+    }
+
+    a {
+      color: #0077b6;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    code {
+      display: inline-block;
+      background: #ececec;
+      padding: 0.3rem 0.6rem;
+      border-radius: 6px;
+      font-family: 'Courier New', monospace;
+      font-size: 0.95rem;
+      color: #333;
+    }
+
+    pre {
+      margin: 1rem 0;
+      padding: 1rem;
+      background: #fdfdfd;
+      border-left: 5px solid #0077b6;
+      border-radius: 4px;
+      overflow-x: auto;
+    }
+
+    ul,
+    ol {
+      padding-left: 1.5rem;
+      margin: 1rem 0;
+    }
+
+    ul li,
+    ol li {
+      margin-bottom: 0.5rem;
+    }
+
+    ul {
+      list-style-type: disc;
+    }
+
+    ol {
+      list-style-type: decimal;
+    }
+
+    blockquote {
+      border-left: 4px solid #0077b6;
+      margin: 1.5rem 0;
+      padding: 0.8rem;
+      background: #f1f1f1;
+      font-style: italic;
+      color: #444;
+    }
+
+    hr {
+      border: none;
+      border-top: 2px solid #ddd;
+      margin: 2rem 0;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1rem 0;
+      background: #fff;
+    }
+
+    th,
+    td {
+      padding: 0.8rem;
+      border: 1px solid #ddd;
+      text-align: left;
+    }
+
+    th {
+      background: #0077b6;
+      color: white;
+      font-weight: bold;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 1rem 0;
+      border-radius: 6px;
+    }
+
+    /* Inline Elements */
+    strong {
+      color: #005b8e;
+      font-weight: bold;
+    }
+
+    em {
+      color: #444;
+      font-style: italic;
+    }
+
+    mark {
+      background: #ffeb3b;
+      padding: 0.2rem 0.4rem;
+      border-radius: 4px;
+    }
+
+
+    style code body {
+      color: red;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Documentation v1.3.2</h1>
+
+  <!-- <div> -->
+  <hr>
+  <h2>Get Started</h2>
+
+  <h3>Install</h3>
+
+  <ul>
+    <li>
+      <pre>npm i -g mogara</pre>
+    </li>
+
+    <li>
+      or download latest <a href="https://github.com/IsmailBinMujeeb/mogara/releases">mogara-win.exe</a>
+    </li>
+  </ul>
+
+  <!-- </div> -->
+
+  <h3>Create a index.mg file and paste:</h3>
+
+  <pre># Hello World</pre>
+
+  <h3>Now run this command:</h3>
+
+  <pre>mogara index.mg</pre>
+
+  <hr>
+
+  <h2>Quick Access</h2>
+
+  <h3>Headings</h3>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Mogara</th>
+        <th>HTML</th>
+      </tr>
+    </thead>
+    <thead>
+    </thead>
+    <tbody>
+      <tr>
+        <td>#</td>
+        <td>h1</td>
+      </tr>
+      <tr>
+        <td>##</td>
+        <td>h2</td>
+      </tr>
+      <tr>
+        <td>###</td>
+        <td>h3</td>
+      </tr>
+      <tr>
+        <td>####</td>
+        <td>h4</td>
+      </tr>
+      <tr>
+        <td>#####</td>
+        <td>h5</td>
+      </tr>
+      <tr>
+        <td>######</td>
+        <td>h6</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <b>Example :-</b>
+
+  <pre>
+# h1
+## h2
+### h3
+#### h4
+##### h5
+###### h6
+</pre>
+
+  <h3>Styling</h3>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Mogara</th>
+        <th>HTML</th>
+      </tr>
+    </thead>
+    <thead>
+    </thead>
+    <tbody>
+      <tr>
+        <td>*italic*</td>
+        <td>italic tag</td>
+      </tr>
+      <tr>
+        <td>** Bold **</td>
+        <td>Bold tag</td>
+      </tr>
+      <tr>
+        <td>_Underline_</td>
+        <td>Underline</td>
+      </tr>
+      <tr>
+        <td>~Strike~</td>
+        <td>strike</td>
+      </tr>
+      <tr>
+        <td>^Super Script^</td>
+        <td>Superscript tag</td>
+      </tr>
+      <tr>
+        <td>__SubScript__</td>
+        <td>Subscript tag</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <b>Example :-</b>
+
+  <pre>
+*Italic*
+**Bold**
+_Underline_
+~Strike~
+^Super Script^
+__Sub Script__
+</pre>
+
+  <h3>Pre &amp; Code</h3>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Mogara</th>
+        <th>HTML</th>
+      </tr>
+    </thead>
+    <thead>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          ``` code ```
+        </td>
+        <td>pre tag</td>
+      </tr>
+      <tr>
+        <td>`code`</td>
+        <td>code tag</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <b>Example :-</b>
+
+  <pre>
+`const a = 10;`
+```
+const a = 10;
+```
+  </pre>
+
+  <h3>Links and images</h3>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Mogara</th>
+        <th>HTML</th>
+      </tr>
+    </thead>
+    <thead>
+    </thead>
+    <tbody>
+      <tr>
+        <td>[text](href)</td>
+        <td>anchor tag</td>
+      </tr>
+      <tr>
+        <td>![alt](src)</td>
+        <td>image tag</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <b>Example :-</b>
+
+<pre>
+[Visit example.com](https://example.com)
+![Bird Image](https://images.alphacoders.com/492/492674.jpg)
+</pre>
+
+  <h3>Ordered and Unorder lists</h3>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Mogara</th>
+        <th>HTML</th>
+      </tr>
+    </thead>
+    <thead>
+    </thead>
+    <tbody>
+      <tr>
+        <td>( -<code>or</code>*<code>or</code>+ )</td>
+        <td>unorder list tag</td>
+      </tr>
+      <tr>
+        <td>( 1. 2. 3. ... )</td>
+        <td>order list tag</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <b>Example :-</b>
+
+  <pre>
+- Delhi
++ Mumbai
+* Chennai
+
+1. Apple
+2. Mango
+3. Banana
+</pre>
+
+  <h3>Div tag container</h3>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Mogara</th>
+        <th>HTML</th>
+      </tr>
+    </thead>
+    <thead>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+            &lt;? Mogara Code Goes Here ?&gt;
+        </td>
+        <td>div tag</td>
+      </tr>
+      <tr>
+        <td>
+            &lt;? Mogara Code Goes Here ?&gt;(class="wrapper")
+        </td>
+        <td>div tag with attributes like class, id, styles, etc</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <b>Example :-</b>
+
+  <pre>
+&lt;?
+This is a div tag
+?&gt;
+
+&lt;?
+This is a div tag with class attribute
+?&gt;(class="wrapper")
+  </pre>
+
+  <h2>Css Styling</h2>
+
+  <h3>Internal css</h3>
+
+  <ul>
+    <li>
+      In mogara you can write any css code in between &lt;css style code &gt;
+    </li>
+  </ul>
+
+  <b>Example:- </b>
+  <pre>
+&lt;css
+body{
+    color: red;
+}
+&gt;
+</pre>
+
+  <h3>External css</h3>
+
+  <ul>
+    <li>
+      In mogara you can write the path to .css in &lt;css: path/to/css &gt;
+    </li>
+  </ul>
+
+  <b>Example:- </b>
+  <pre>
+    &lt;css: path/to/css &gt;
+</pre>
+
+  <h3>Inline css ( Only for div tag )</h3>
+
+  <ul>
+    <li>
+      In mogara you can write inline css for divs in circular braces <code>()</code>
+    </li>
+  </ul>
+
+  <b>Example:- </b>
+  <pre>
+&lt;?
+[example.com](example.com)
+?&gt;(style="background-color: black;")
+</pre>
+
+  <h2>Embedded JS</h2>
+
+  <b>Example:- </b>
+  <pre>
+
+&lt;js
+function sayHey(name){
+    return 'Hey! ' + name;
+}
+&gt;
+
+&lt;js sayHey("John Deo") &gt;
+</pre>
+  <ul>
+    <li>
+      In mogara you can also use .js files code.
+    </li>
+  </ul>
+
+  <b>Example:- </b>
+  <pre>
+&lt;js: path/to/js &gt;
+</pre>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script>
+    const socket = io();
+    socket.on('fileUpdated', (html) => {
+      console.log('Hey')
+      document.documentElement.innerHTML = html
+    });
+  </script>
+</body>
+
+</html>
